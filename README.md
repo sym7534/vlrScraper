@@ -1,5 +1,5 @@
 # vct-scraper
-data scraper built for getting vct player data from vlr.gg
+data scraper built for getting vct player-match data from vlr.gg
 
 find the match you want data from, get the 1-6 digit number in the url
 
