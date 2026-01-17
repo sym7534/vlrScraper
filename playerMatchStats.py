@@ -4,10 +4,10 @@ import requests
 from bs4 import BeautifulSoup
 from pathlib import Path
 
-matchID = 498627
+matchID = 596399
 url = f"https://www.vlr.gg/{matchID}/"
 
-outputPath = Path(f"match{matchID}.html")        
+outputPath = Path(f"match{matchID}.json")        
 # creates a new file named after the vlr index  
 
 headers = {"User-Agent": "TEST"}
@@ -72,7 +72,7 @@ for table in overall.select("table.wf-table-inset.mod-overview"):
             # add to list of all the stats for a player
 
         # create a "line" of text first with player name/team, then with their stats
-        playerLine = f"{playerTeamDiv.get_text(strip=True)}\t\t{playerNameDiv.get_text(strip=True)}"
+        playerLine = f"{playerNameDiv.get_text(strip=True)}"
         statsLine = "\t\t".join(statValues)
 
         # add lines of text to the output file
