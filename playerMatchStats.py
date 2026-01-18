@@ -4,7 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 from pathlib import Path
 
-matchID = 596399
+matchID = 596402
 url = f"https://www.vlr.gg/{matchID}/"
 
 outputPath = Path(f"match{matchID}.json")        
