@@ -8,3 +8,5 @@ https://www.vlr.gg/<number>
 enter it into matchID
 
 script will create a file corresponding to that match.
+
+WILL NOT WORK ON SINGLE MAP MATCHES
